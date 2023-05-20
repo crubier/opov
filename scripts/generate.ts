@@ -2,8 +2,9 @@ import peggy from "peggy";
 import tspegjs from "ts-pegjs";
 
 const dir = import.meta.dir;
-const inputFile = Bun.file(`${dir}/grammar.pegjs`);
-const outputFile = Bun.file(`${dir}/parser.ts`);
+
+const inputFile = Bun.file(`${dir}/../src/parser/grammar.pegjs`);
+const outputFile = Bun.file(`${dir}/../src/parser/parser.ts`);
 const inputText = await inputFile.text();
 const outputText = peggy.generate(inputText, {
   output: "source",

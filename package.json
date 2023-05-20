@@ -1,0 +1,19 @@
+{
+  "name": "opov",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "generate": "bun ./src/parser/generate.ts"
+  },
+  "devDependencies": {
+    "bun-types": "^0.5.0",
+    "peggy": "^3.0.2",
+    "ts-pegjs": "^4.1.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "moize": "^6.1.6"
+  }
+}
